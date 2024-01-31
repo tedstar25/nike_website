@@ -4,6 +4,8 @@ import { Hero,PopularProducts,Footer,
 
 import Nav from './components/Nav';
 
+// add hover effects on pictures 
+
 const App = () => (
 
   <main className="relative">
