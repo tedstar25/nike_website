@@ -10,10 +10,6 @@ services:
       dockerfile: Dockerfile
     container_name: ft_nike
 
-      
-    volumes:
-      - ./:/app
-
     ports:
-      - '4010:5173'
+      - '4173:4173'
 
