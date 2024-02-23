@@ -11,5 +11,5 @@ services:
     container_name: ft_nike
 
     ports:
-      - '4173:4173'
+      - '4020:4173'
 
