@@ -1,15 +1,18 @@
 version: '3.7'
 
-x-compose-config:
-  project_name: restaurant
-
 services:
-  frontend:
-    build: 
+  ft_nike:      
+    build:
       context: ./
       dockerfile: Dockerfile
-    container_name: ft_nike
+    
 
-    ports:
-      - '4020:4173'
+    restart: always 
+
+    networks:
+      - reverse_proxy
+
+networks:
+  reverse_proxy:
+    external: true
 
